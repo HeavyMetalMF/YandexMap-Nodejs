@@ -21,14 +21,6 @@ class MarkController {
                 return res.status(400).json({message: 'Can`t find id'});
             }
             const updatedMarkOriginal = await Mark.findByIdAndUpdate(mark._id, mark, {new: true});
-            // const updatedMark = await User.updateOne(
-            //     {_id: mark.userId, "marks._id": "mark._id"},
-            //     {$set: {
-            //             "marks.$.latitude": mark.latitude,
-            //             "marks.$.longitude": mark.longitude,
-            //             "marks.$.name": mark.name,
-            //         }
-            //     })
             return res.json(updatedMarkOriginal);
         } catch (e) {
             console.log(e)

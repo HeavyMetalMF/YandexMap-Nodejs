@@ -1,6 +1,6 @@
 import Router from "express";
 import MarkController from "./MarkController.js";
-import {authMiddleware} from "./meddleware/authMiddleware.js";
+import {authMiddleware} from "./middleware/authMiddleware.js";
 
 
 const router = new Router();
