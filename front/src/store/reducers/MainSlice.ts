@@ -145,10 +145,6 @@ export const MainSlice = createSlice({
             .addCase(deleteMark.fulfilled, (state, action) => {
                 state.marks = state.marks.filter(mark => mark._id !== action.payload._id);
             })
-            .addCase(login.fulfilled, (state, action) => {
-            })
-            .addCase(register.fulfilled, (state, action) => {
-            })
     }
 })
 

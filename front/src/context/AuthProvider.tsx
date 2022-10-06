@@ -1,5 +1,5 @@
 import React, {createContext, useContext} from 'react';
-import useToken from "../components/hooks/useToken";
+import useToken from "../hooks/useToken";
 
 interface AuthContextType {
     token: string | null
