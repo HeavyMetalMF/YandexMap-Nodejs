@@ -7,7 +7,6 @@ services:
       - "3000:80"
   back:
     container_name: back
-#    image: test_app
     build: ./back
     ports:
       - "5000:5000"
